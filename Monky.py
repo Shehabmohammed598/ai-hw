@@ -20,20 +20,20 @@ fact(ItHas,"macmir","dark brown")
 fact(ItHas,"Mikey","brown")
 
 def gorilla(name):
-    return conde((ItIs(name,"bigger"),ItHas(name,"black")))
+    return conde((ItIs(name,"bigger"),ItHas(name,"brown")))
 
 
 def baboon(name):
-    return conde([ItHas(name,"dark brown")],[ItHas(name,"brown")])
+    return conde([ItHas(name,"dark brown")],[ItHas(name,"black")])
 
 def chimpanzee(name):
     return conde((ItIs(name,"big"),ItHas(name,"black")))
 
 def nasnas(name):
-    return conde([ItIs(name,"small")],[ItHas(name,"brown")])
+    return conde([ItIs(name,"small")],[ItHas(name," dark brown")])
 
 def mandrill(name):
-    return conde((ItIs(name,"small"),ItHas(name,"dark brown")))
+    return conde((ItIs(name,"bigger"),ItHas(name,"brown")))
 
 x = var()
 print("gorilla monky is {}".format((run(2,x,gorilla(x)))))
